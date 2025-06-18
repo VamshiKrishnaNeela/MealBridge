@@ -36,11 +36,11 @@ const Navbar = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">FF</span>
+              <span className="text-white font-bold text-lg">MB</span>
             </div>
             <span className="text-xl font-bold">
-              <span className="text-orange-500">Food</span>
-              <span className="text-green-700">Forward</span>
+              <span className="text-orange-500">Meal</span>
+              <span className="text-green-700">Bridge</span>
             </span>
           </Link>
 

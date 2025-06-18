@@ -44,10 +44,10 @@ const SigninForm = () => {
           <div className="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="bg-gradient-to-r from-orange-500 to-orange-600 py-8 px-6 text-center">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-orange-500 font-bold text-xl">FF</span>
+                <span className="text-orange-500 font-bold text-xl">MB</span>
               </div>
               <h1 className="text-2xl font-bold text-white">Welcome Back</h1>
-              <p className="text-orange-100 mt-2">Sign in to continue to FoodForward</p>
+              <p className="text-orange-100 mt-2">Sign in to continue to MealBridge</p>
             </div>
 
             <div className="p-8">

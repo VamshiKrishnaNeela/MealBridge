@@ -9,11 +9,11 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">FF</span>
+                <span className="text-white font-bold text-lg">MB</span>
               </div>
               <span className="text-xl font-bold">
-                <span className="text-orange-500">Food</span>
-                <span className="text-green-400">Forward</span>
+                <span className="text-orange-500">Meal</span>
+                <span className="text-green-400">Bridge</span>
               </span>
             </div>
             <p className="text-gray-400 mb-6">
@@ -86,7 +86,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} FoodForward. All rights reserved.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} MealBridge. All rights reserved.</p>
         </div>
       </div>
     </footer>

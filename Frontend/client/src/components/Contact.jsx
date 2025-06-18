@@ -54,7 +54,7 @@ function Contact() {
                 <span className="text-green-700">Get in</span> <span className="text-orange-500">Touch</span>
               </h1>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Have questions about FoodForward? We're here to help. Reach out to us using the contact information
+                Have questions about MealBridge? We're here to help. Reach out to us using the contact information
                 below or fill out the form.
               </p>
             </div>

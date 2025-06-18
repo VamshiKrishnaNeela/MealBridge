@@ -48,10 +48,10 @@ const SignupForm = () => {
           <div className="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="bg-gradient-to-r from-green-600 to-green-700 py-8 px-6 text-center">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-green-600 font-bold text-xl">FF</span>
+                <span className="text-green-600 font-bold text-xl">MB</span>
               </div>
               <h1 className="text-2xl font-bold text-white">Create Account</h1>
-              <p className="text-green-100 mt-2">Join FoodForward and help reduce food waste</p>
+              <p className="text-green-100 mt-2">Join MealBridge and help reduce food waste</p>
             </div>
 
             <div className="p-8">
