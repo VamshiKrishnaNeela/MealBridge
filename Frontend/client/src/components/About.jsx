@@ -1,7 +1,7 @@
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { Users, Heart, TrendingUp } from "lucide-react"
-
+import AboutImage from "../assets/About Donations.webp"
 function About() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -28,7 +28,7 @@ function About() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src={AboutImage}
                 alt="Our story"
                 className="rounded-2xl shadow-lg w-full h-auto object-cover"
               />

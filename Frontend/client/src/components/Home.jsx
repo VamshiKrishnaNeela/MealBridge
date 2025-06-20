@@ -1,12 +1,13 @@
-import { useContext } from "react"
-import { Link } from "react-router-dom"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
-import { AuthContext } from "../context/AuthContext"
-import { ArrowRight, Heart, Users, Clock, MapPin } from "lucide-react"
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import MainImage from "../assets/MainImage.jpg";
+import { AuthContext } from "../context/AuthContext";
+import { ArrowRight, Heart, Users, Clock, MapPin } from "lucide-react";
 
 function Home() {
-  const { isAuthenticated } = useContext(AuthContext)
+  const { isAuthenticated } = useContext(AuthContext);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -23,8 +24,8 @@ function Home() {
               <span className="text-green-700">between the two.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-lg">
-              Together, we can fight hunger. Connect excess food with those who need it most through our simple donation
-              platform.
+              Together, we can fight hunger. Connect excess food with those who
+              need it most through our simple donation platform.
             </p>
 
             {isAuthenticated ? (
@@ -45,8 +46,10 @@ function Home() {
             ) : (
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-orange-100 max-w-md">
                 <p className="text-gray-700 mb-4">
-                  <span className="text-orange-500 font-semibold">Please login or sign up</span> to access donation and
-                  receive forms.
+                  <span className="text-orange-500 font-semibold">
+                    Please login or sign up
+                  </span>{" "}
+                  to access donation and receive forms.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
@@ -67,9 +70,10 @@ function Home() {
           </div>
           <div className="lg:w-1/2 flex justify-center">
             <img
-              src="/placeholder.svg?height=500&width=500"
+              src={MainImage}
               alt="Food donation illustration"
-              className="rounded-2xl shadow-xl max-w-full h-auto object-cover"
+              className="rounded-2xl shadow-xl max-w-full "
+              style={{height:"400px"}}
             />
           </div>
         </div>
@@ -79,9 +83,12 @@ function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              How It Works
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Our platform makes it easy to connect excess food with those who need it most.
+              Our platform makes it easy to connect excess food with those who
+              need it most.
             </p>
           </div>
 
@@ -91,7 +98,9 @@ function Home() {
                 <Users size={24} />
               </div>
               <h3 className="text-xl font-bold mb-2">Register</h3>
-              <p className="text-gray-600">Create an account to start donating or receiving food.</p>
+              <p className="text-gray-600">
+                Create an account to start donating or receiving food.
+              </p>
             </div>
 
             <div className="bg-green-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
@@ -99,7 +108,10 @@ function Home() {
                 <Heart size={24} />
               </div>
               <h3 className="text-xl font-bold mb-2">Donate Food</h3>
-              <p className="text-gray-600">List your excess food with details about quantity and pickup location.</p>
+              <p className="text-gray-600">
+                List your excess food with details about quantity and pickup
+                location.
+              </p>
             </div>
 
             <div className="bg-orange-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
@@ -107,7 +119,9 @@ function Home() {
                 <MapPin size={24} />
               </div>
               <h3 className="text-xl font-bold mb-2">Find Food</h3>
-              <p className="text-gray-600">Browse available donations near you and request pickup.</p>
+              <p className="text-gray-600">
+                Browse available donations near you and request pickup.
+              </p>
             </div>
 
             <div className="bg-green-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
@@ -115,7 +129,9 @@ function Home() {
                 <Clock size={24} />
               </div>
               <h3 className="text-xl font-bold mb-2">Connect</h3>
-              <p className="text-gray-600">Coordinate pickup details and help reduce food waste.</p>
+              <p className="text-gray-600">
+                Coordinate pickup details and help reduce food waste.
+              </p>
             </div>
           </div>
         </div>
@@ -126,12 +142,16 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Together, we're making a difference in our communities.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Together, we're making a difference in our communities.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-md text-center">
-              <h3 className="text-4xl font-bold text-orange-500 mb-2">5,000+</h3>
+              <h3 className="text-4xl font-bold text-orange-500 mb-2">
+                5,000+
+              </h3>
               <p className="text-gray-700">Meals Donated</p>
             </div>
 
@@ -151,8 +171,12 @@ function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-orange-500 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Make a Difference?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">Join our community of food donors and recipients today.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Make a Difference?
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Join our community of food donors and recipients today.
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -173,7 +197,7 @@ function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
